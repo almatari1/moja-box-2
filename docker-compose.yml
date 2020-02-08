@@ -1,0 +1,11 @@
+version: '3'
+services:
+  test_builder:
+    container_name: test_builder
+    image: ubuntu:18.04
+    privileged: true
+    command:
+      - sh
+      - -c 
+      - 'tail -f /dev/null'
+    
