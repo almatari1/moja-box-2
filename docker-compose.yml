@@ -2,7 +2,9 @@ version: '3'
 services:
   test_builder:
     container_name: test_builder
-    image: ubuntu:18.04
+    # image: ubuntu:18.04
+    build: 
+      context: .
     privileged: true
     command:
       - sh
